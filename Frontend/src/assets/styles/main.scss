@@ -6,6 +6,7 @@
 }
 body {
   background-color: #faf5f0;
+  min-height: 100% !important;
 }
 body::before {
   content: "";
@@ -26,7 +27,9 @@ body::before {
   width: 100vw;
   display: flex;
   justify-content: center;
-  height: 96vh;
+  // height: 96vh;
+  flex-direction: column;
+  align-items: center;
   .hero {
     display: flex;
     justify-content: center;
@@ -34,6 +37,7 @@ body::before {
     border-bottom: 3px solid #ded5ca;
     border-radius: 40px;
     width: 95.5%;
+    padding: 50px 0;
     .herocont {
       max-width: 82%;
       display: flex;
@@ -54,9 +58,17 @@ body::before {
       }
       .heroright {
         // display: flex;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1200px;
         justify-content: center;
         .bookcont {
           position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .bookimage {
           position: relative;
@@ -65,10 +77,16 @@ body::before {
           animation: up-and-down 7s infinite;
           z-index: 1;
         }
+        @media only screen and (max-width: 768px) {
+          .bookimage {
+            width: 50%;
+          }
+        }
         .sticker {
           z-index: 0;
           position: absolute;
           filter: drop-shadow(rgba(0, 0, 0, 0.421) 0px 2px 3px);
+          transform-origin: center;
         }
         .ui {
           top: -2%;
@@ -112,6 +130,52 @@ body::before {
           rotate: 10deg;
           width: 160px;
         }
+        @media only screen and (max-width: 1024px) {
+          .ui {
+            width: 100px;
+          }
+          .ux {
+            width: 100px;
+          }
+          .gamification {
+            width: 130px;
+          }
+          .interaction {
+            width: 100px;
+          }
+          .usertesting {
+            width: 120px;
+          }
+          .safety {
+            width: 110px;
+          }
+          .marketing {
+            width: 120px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .ui {
+            width: 80px;
+          }
+          .ux {
+            width: 80px;
+          }
+          .gamification {
+            width: 90px;
+          }
+          .interaction {
+            width: 80px;
+          }
+          .usertesting {
+            width: 90px;
+          }
+          .safety {
+            width: 80px;
+          }
+          .marketing {
+            width: 80px;
+          }
+        }
       }
       .heroleft {
         display: flex;
@@ -128,6 +192,12 @@ body::before {
           letter-spacing: 1px;
           margin-bottom: 4%;
         }
+        @media only screen and (max-width: 768px) {
+          .edition {
+            font-size: 12px;
+            margin-bottom: 1%;
+          }
+        }
         .designing {
           font-family: "Dela Gothic One", sans-serif;
           color: rgb(65, 40, 103);
@@ -135,11 +205,34 @@ body::before {
           opacity: 0.89;
           margin-bottom: 4%;
         }
+        @media only screen and (max-width: 1200px) {
+          .designing {
+            font-size: 32px;
+            width: 400px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .designing {
+            font-size: 24px;
+            width: 300px;
+            margin-bottom: 2%;
+          }
+        }
         .deliver {
           font-family: "Manrope", sans-serif;
           color: rgb(65, 40, 103);
           font-size: 22px;
           font-weight: 500;
+        }
+        @media only screen and (max-width: 1200px) {
+          .deliver {
+            font-size: 18px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .deliver {
+            font-size: 16px;
+          }
         }
         .parents {
           font-family: "Manrope", sans-serif;
@@ -148,6 +241,29 @@ body::before {
           font-weight: 500;
           margin-bottom: 4%;
         }
+        @media only screen and (max-width: 1200px) {
+          .parents {
+            font-size: 18px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .parents {
+            font-size: 16px;
+            margin-bottom: 2%;
+          }
+        }
+
+        .line {
+          height: 1.2px;
+          background-color: #c0d1cd;
+          width: 130px;
+          margin-bottom: 5%;
+        }
+        @media only screen and (max-width: 768px) {
+          .line {
+            margin-bottom: 2.5%;
+          }
+        }
         .acomp {
           font-size: 14px;
           font-weight: 500;
@@ -155,11 +271,10 @@ body::before {
           color: rgb(65, 40, 103);
           margin-bottom: 10%;
         }
-        .line {
-          height: 1.2px;
-          background-color: #c0d1cd;
-          width: 130px;
-          margin-bottom: 5%;
+        @media only screen and (max-width: 768px) {
+          .acomp {
+            margin-bottom: 5%;
+          }
         }
         .buy {
           background-color: rgb(72, 117, 106);
@@ -168,9 +283,56 @@ body::before {
           width: 200px;
           font-size: 18px;
           font-family: "Dela Gothic One", sans-serif;
-          padding: 14px 3px;
+          padding: 16px 3px;
         }
+        @media only screen and (max-width: 1200px) {
+          .buy {
+            font-size: 16px;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .buy {
+            width: 100%;
+            margin-bottom: 5%;
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .heroleft {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (max-width: 1414px) {
+      .herocont {
+        gap: 2%;
+      }
+    }
+    @media only screen and (max-width: 1369px) {
+      .herocont {
+        gap: 0%;
+      }
+    }
+    @media only screen and (max-width: 1414px) {
+      .herocont {
+        max-width: 90%;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .herocont {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+    @media only screen and (max-width: 1232px) {
+      .herocont {
+        max-width: 92%;
       }
     }
   }
 }
+// @media only screen and (max-width: 1200px) {
+//   .main {
+//     height: 50vh;
+//   }
+// }
