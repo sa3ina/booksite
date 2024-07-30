@@ -24,7 +24,7 @@ body::before {
 }
 //Hero section
 .main {
-  width: 100vw;
+  // width: 100vw;
   display: flex;
   justify-content: center;
   // height: 96vh;
@@ -38,6 +38,7 @@ body::before {
     border-radius: 40px;
     width: 95.5%;
     padding: 50px 0;
+    margin-bottom: 1%;
     .herocont {
       max-width: 82%;
       display: flex;
@@ -331,8 +332,103 @@ body::before {
     }
   }
 }
-// @media only screen and (max-width: 1200px) {
-//   .main {
-//     height: 50vh;
-//   }
-// }
+//BookPages
+.bookpages {
+  display: flex;
+  background-color: #f7ede2;
+  width: 95.5%;
+  border-radius: 40px;
+  border-bottom: 3px solid #ded5ca;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookpagescont {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 10%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.full {
+  width: 290px;
+  margin-bottom: 13%;
+  color: #553f76;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+
+.buypurple {
+  background-color: #553f76;
+  color: #f7ede2;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 18px;
+  font-family: "Dela Gothic One", sans-serif;
+  padding: 16px 3px;
+}
+
+.camera-roll {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 67vh;
+  gap: 13px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+}
+
+.line.reverse {
+  animation: scroll-reverse 60s linear infinite;
+}
+
+.line img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  50.1% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  50.1% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
