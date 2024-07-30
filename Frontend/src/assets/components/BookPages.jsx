@@ -5,7 +5,7 @@ const BookPages = () => {
     <div className="bookpages">
       <div className="bookpagescont">
         <div className="camera-roll">
-          <div className="line">
+          <div className="line horizontal-line line1">
             <img
               src="https://framerusercontent.com/images/RIo9pe5dIRioAshVpUMRJvjRs5o.png?scale-down-to=1024"
               alt="Image 1"
@@ -55,7 +55,7 @@ const BookPages = () => {
               alt="Image 6"
             />
           </div>
-          <div className="line reverse">
+          <div className="line reverse line2">
             <img
               src="https://framerusercontent.com/images/nJkzxvv6XKxUEjjhVCEixinhM.png?scale-down-to=1024"
               alt="Image 7"
@@ -105,7 +105,7 @@ const BookPages = () => {
               alt="Image 12"
             />
           </div>
-          <div className="line">
+          <div className="line line3">
             <img
               src="https://framerusercontent.com/images/Ikjllfjnf41BlWQQP8B9pqTbFM.png?scale-down-to=1024"
               alt="Image 13"

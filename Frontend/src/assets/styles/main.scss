@@ -383,6 +383,16 @@ body::before {
   height: 67vh;
   gap: 13px;
 }
+@media only screen and (max-width: 1000px) {
+  .camera-roll {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .line3 {
+    display: none !important ;
+  }
+}
 
 .line {
   display: flex;
@@ -410,14 +420,27 @@ body::before {
   50% {
     transform: translateY(-50%);
   }
-  50.1% {
+  51% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-50%);
   }
 }
-
+@keyframes horizontalscroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  51% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 @keyframes scroll-reverse {
   0% {
     transform: translateY(-50%);
@@ -425,10 +448,55 @@ body::before {
   50% {
     transform: translateY(0);
   }
-  50.1% {
+  51% {
     transform: translateY(-50%);
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .line2 {
+    display: none !important ;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bookpagescont {
+    flex-direction: column;
+    width: 92%;
+    justify-content: center;
+    align-items: center;
+  }
+  .full {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .buypurple {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .line {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 10px;
+  }
+  .camera-roll {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 95vw; /* Ensure container width matches the viewport */
+    gap: 13px;
+    height: auto;
+    margin-top: 11%;
+    /* Adjust height to ensure it fits the images */
+  }
+  // .line img {
+  //   width: 400px;
+  //   height: 500px;
+  // }
+  .horizontal-line {
+    flex-direction: row;
+    animation: horizontalscroll 60s linear infinite;
   }
 }
