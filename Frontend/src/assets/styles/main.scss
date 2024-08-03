@@ -420,6 +420,7 @@ body::before {
   border-bottom: 3px solid #ded5ca;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1%;
 }
 
 .bookpagescont {
@@ -462,7 +463,7 @@ body::before {
   height: 67vh;
   gap: 13px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .camera-roll {
     height: 40vh;
   }
