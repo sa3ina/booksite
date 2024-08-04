@@ -1,0 +1,14 @@
+.background {
+  width: 95.5%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 600px;
+  .background-image {
+    height: 60vh;
+    background-image: url("https://framerusercontent.com/images/y0RA6boEYu5I3723O8GvcTDlA8.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+  }
+}
