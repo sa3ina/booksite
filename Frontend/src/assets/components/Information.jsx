@@ -53,9 +53,6 @@ const Information = () => {
             delay: 4500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
