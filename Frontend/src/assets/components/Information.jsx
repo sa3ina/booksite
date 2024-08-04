@@ -1,6 +1,12 @@
 import React from "react";
 import "../styles/information.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import star from "../images/svg-image-22.svg";
+
 const Information = () => {
   return (
     <div className="info">
@@ -39,7 +45,40 @@ const Information = () => {
           </div>
         </div>
       </div>
-      <div className="pages"></div>
+      <div className="swipercont">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src="https://framerusercontent.com/images/WEW2iDjdNd5JAhvPyfpdt4cZik.png"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://framerusercontent.com/images/y15qexKJqkNO0a5GYriBC6jfEE.png"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://framerusercontent.com/images/fmqLvd40auYmYsYiCTRbFBUP94.png"
+              alt=""
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };

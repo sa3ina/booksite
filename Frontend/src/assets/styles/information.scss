@@ -30,18 +30,10 @@
     }
   }
 
-  .pages {
-    background-color: black;
-    width: 50%;
-    box-shadow: 0 2px #4b3271;
-    border-radius: 30px;
-  }
   @media only screen and (max-width: 1000px) {
     .purpleside {
       width: 100%;
-    }
-    .pages {
-      width: 100%;
+      margin-bottom: 2%;
     }
   }
 }
@@ -49,4 +41,34 @@
   .info {
     flex-direction: column;
   }
+}
+// Swiper style
+.swiper {
+  width: 46vw;
+  height: 55vh;
+  border-radius: 30px;
+}
+.swiper:hover {
+  cursor: grab;
+}
+@media only screen and (max-width: 1000px) {
+  .swiper {
+    width: 95.5vw;
+    height: 40vh;
+  }
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
