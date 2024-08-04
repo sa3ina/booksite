@@ -1,0 +1,166 @@
+.bookpages {
+  display: flex;
+  background-color: #f7ede2;
+  width: 95.5%;
+  border-radius: 40px;
+  border-bottom: 3px solid #ded5ca;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+  .bookpagescont {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10%;
+    .camera-roll {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      height: 67vh;
+      gap: 13px;
+      .line {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        animation: scroll 60s linear infinite;
+        img {
+          width: 200px;
+          height: auto;
+          margin-bottom: 10px;
+          transition: transform 0.3s;
+          border-radius: 10px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .horizontal-line {
+          flex-direction: row;
+          animation: horizontalscroll 60s linear infinite;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .line {
+          display: flex;
+          flex-direction: row;
+          white-space: nowrap;
+          gap: 10px;
+        }
+      }
+      .line.reverse {
+        animation: scroll-reverse 60s linear infinite;
+      }
+      @media only screen and (max-width: 1040px) {
+        .line2 {
+          display: none !important ;
+        }
+      }
+      @media only screen and (max-width: 1340px) {
+        .line3 {
+          display: none !important ;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .camera-roll {
+        height: 40vh;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .camera-roll {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width: 95vw;
+        gap: 13px;
+        height: auto;
+        margin-top: 11%;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+
+      .full {
+        width: 290px;
+        margin-bottom: 13%;
+        color: #553f76;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Manrope", sans-serif;
+      }
+      @media only screen and (max-width: 768px) {
+        .full {
+          margin-bottom: 5%;
+          width: 100%;
+        }
+      }
+      .buypurple {
+        background-color: #553f76;
+        color: #f7ede2;
+        border-radius: 8px;
+        width: 200px;
+        font-size: 18px;
+        font-family: "Dela Gothic One", sans-serif;
+        padding: 16px 3px;
+      }
+      @media only screen and (max-width: 768px) {
+        .buypurple {
+          width: 100%;
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .bookpagescont {
+      flex-direction: column;
+      width: 92%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  51% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes horizontalscroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  51% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-reverse {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  51% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

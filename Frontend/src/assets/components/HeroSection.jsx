@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/herosection.scss";
 import gamification from "../images/svg-image-6.svg";
 import interaction from "../images/svg-image-16.svg";
 import usertesting from "../images/svg-image-17.svg";

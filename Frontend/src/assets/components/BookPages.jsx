@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/bookpages.scss";
 const BookPages = () => {
   return (
     <div className="bookpages">

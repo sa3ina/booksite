@@ -1,0 +1,381 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, #f7ede2 0%, rgb(250, 245, 240) 100%);
+  border-bottom: 3px solid #ded5ca;
+  border-radius: 40px;
+  width: 95.5%;
+  padding: 50px 0;
+  margin-bottom: 1%;
+  .herocont {
+    max-width: 82%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    @keyframes up-and-down {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .heroright {
+      // display: flex;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 1200px;
+      justify-content: center;
+      .bookcont {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bookimage {
+        position: relative;
+        width: 91%;
+        margin-left: 10%;
+        animation: up-and-down 7s infinite;
+        z-index: 1;
+      }
+      @media only screen and (max-width: 768px) {
+        .bookimage {
+          width: 50%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .bookimage {
+          width: 80%;
+        }
+      }
+      .sticker {
+        z-index: 0;
+        position: absolute;
+        filter: drop-shadow(rgba(0, 0, 0, 0.421) 0px 2px 3px);
+        transform-origin: center;
+      }
+      .ui {
+        top: -2%;
+        right: 17%;
+        rotate: 15deg;
+        width: 127px;
+      }
+      .ux {
+        top: -4%;
+        left: 25%;
+        rotate: -11deg;
+        width: 110px;
+      }
+      .interaction {
+        top: 25%;
+        right: 5%;
+        rotate: 21deg;
+        width: 110px;
+      }
+      .usertesting {
+        bottom: 40%;
+        left: 9%;
+        rotate: 10deg;
+        width: 150px;
+      }
+      .marketing {
+        bottom: 12%;
+        left: 20%;
+        rotate: -15deg;
+        width: 145px;
+      }
+      .safety {
+        bottom: -3%;
+        left: 51%;
+        rotate: -13deg;
+        width: 138px;
+      }
+      .gamification {
+        bottom: 8%;
+        right: -2%;
+        rotate: 10deg;
+        width: 160px;
+      }
+      @media only screen and (max-width: 1024px) {
+        .ui {
+          width: 100px;
+        }
+        .ux {
+          width: 100px;
+        }
+        .gamification {
+          width: 130px;
+        }
+        .interaction {
+          width: 100px;
+        }
+        .usertesting {
+          width: 120px;
+        }
+        .safety {
+          width: 110px;
+        }
+        .marketing {
+          width: 120px;
+        }
+      }
+      @media only screen and (max-width: 990px) {
+        .ui {
+          width: 80px;
+        }
+        .ux {
+          width: 80px;
+        }
+        .gamification {
+          width: 100px;
+        }
+        .interaction {
+          width: 80px;
+        }
+        .usertesting {
+          width: 100px;
+        }
+        .safety {
+          width: 90px;
+        }
+        .marketing {
+          width: 90px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .ui {
+          right: 27%;
+        }
+        .ux {
+          left: 27%;
+        }
+        .gamification {
+          right: 20%;
+        }
+        .interaction {
+          right: 20%;
+        }
+        .usertesting {
+          left: 27%;
+        }
+        .safety {
+          bottom: -4%;
+        }
+        .marketing {
+          left: 35%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .ui {
+          right: 20%;
+        }
+        .ux {
+          left: 14%;
+        }
+        .gamification {
+          right: 4%;
+        }
+        .interaction {
+          right: 10%;
+        }
+        .usertesting {
+          left: 14%;
+        }
+        .safety {
+          bottom: -5%;
+        }
+        .marketing {
+          left: 24%;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .ui {
+          right: 6%;
+        }
+        .ux {
+          left: 4%;
+        }
+        .gamification {
+          right: -5%;
+        }
+        .interaction {
+          right: -3%;
+        }
+        .usertesting {
+          left: -3%;
+        }
+        .safety {
+          bottom: -13%;
+        }
+        .marketing {
+          left: 10%;
+        }
+      }
+    }
+    .heroleft {
+      display: flex;
+      flex-direction: column;
+      .edition {
+        font-family: "Manrope", sans-serif;
+        color: rgb(242, 132, 130);
+        border: 1px solid rgb(242, 132, 130);
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 4px 2px;
+        width: 150px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 4%;
+      }
+      @media only screen and (max-width: 768px) {
+        .edition {
+          font-size: 12px;
+          margin-bottom: 1%;
+        }
+      }
+      .designing {
+        font-family: "Dela Gothic One", sans-serif;
+        color: rgb(65, 40, 103);
+        font-size: 41px;
+        opacity: 0.89;
+        margin-bottom: 4%;
+      }
+      @media only screen and (max-width: 1200px) {
+        .designing {
+          font-size: 32px;
+          width: 400px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .designing {
+          font-size: 24px;
+          width: 300px;
+          margin-bottom: 2%;
+        }
+      }
+      .deliver {
+        font-family: "Manrope", sans-serif;
+        color: rgb(65, 40, 103);
+        font-size: 22px;
+        font-weight: 500;
+      }
+      @media only screen and (max-width: 1200px) {
+        .deliver {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .deliver {
+          font-size: 16px;
+        }
+      }
+      .parents {
+        font-family: "Manrope", sans-serif;
+        color: rgb(65, 40, 103);
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 4%;
+      }
+      @media only screen and (max-width: 1200px) {
+        .parents {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .parents {
+          font-size: 16px;
+          margin-bottom: 2%;
+        }
+      }
+
+      .line {
+        height: 1.2px;
+        background-color: #c0d1cd;
+        width: 130px;
+        margin-bottom: 5%;
+      }
+      @media only screen and (max-width: 768px) {
+        .line {
+          margin-bottom: 2.5%;
+        }
+      }
+      .acomp {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Manrope", sans-serif;
+        color: rgb(65, 40, 103);
+        margin-bottom: 10%;
+      }
+      @media only screen and (max-width: 768px) {
+        .acomp {
+          margin-bottom: 5%;
+        }
+      }
+      .buy {
+        background-color: rgb(72, 117, 106);
+        color: #f7ede2;
+        border-radius: 8px;
+        width: 200px;
+        font-size: 18px;
+        font-family: "Dela Gothic One", sans-serif;
+        padding: 16px 3px;
+      }
+      @media only screen and (max-width: 1200px) {
+        .buy {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .buy {
+          width: 100%;
+          margin-bottom: 5%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .buy {
+          margin-bottom: 14%;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .heroleft {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 1414px) {
+    .herocont {
+      gap: 2%;
+    }
+  }
+  @media only screen and (max-width: 1369px) {
+    .herocont {
+      gap: 0%;
+    }
+  }
+  @media only screen and (max-width: 1414px) {
+    .herocont {
+      max-width: 90%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .herocont {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  @media only screen and (max-width: 1232px) {
+    .herocont {
+      max-width: 92%;
+    }
+  }
+}
