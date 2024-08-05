@@ -1,0 +1,23 @@
+.videosection {
+  margin-bottom: 2%;
+  width: 95.5%;
+  .videosectcont {
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    .video {
+      // width: 50%;
+      // box-shadow: 0 2px #4b3271;
+
+      iframe {
+        height: 405px;
+        width: 720px;
+        border-radius: 30px;
+      }
+    }
+    .beigepart {
+      width: 50%;
+      background-color: black;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import HeroSection from "../assets/components/HeroSection";
 import BookPages from "../assets/components/BookPages";
 import Information from "../assets/components/Information";
 import Image from "../assets/components/Image";
+import Video from "../assets/components/Video";
 const Main = () => {
   return (
     <div className="main">
@@ -11,6 +12,7 @@ const Main = () => {
       <BookPages />
       <Information />
       <Image />
+      <Video />
     </div>
   );
 };
