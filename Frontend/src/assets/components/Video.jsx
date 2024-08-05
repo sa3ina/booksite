@@ -10,7 +10,26 @@ const Video = () => {
             frameborder="0"
           ></iframe>
         </div>
-        <div className="beigepart"></div>
+        <div className="beigepart">
+          <div className="beigepartcont">
+            <p className="who">Who is this book for?</p>
+            <p className="this">
+              This book is for anyone creating digital products for children,
+              whether
+              <strong> inexperienced or seasoned, designer or not.</strong> It
+              covers
+              <strong>
+                design, research, strategy, and the business side of the
+                product.
+              </strong>
+              Backed by studies and experts in the industry, it provides
+              <strong>
+                valuable tips, best practices, and guidelines in design,
+                education, business, marketing, and writing for kids.
+              </strong>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
