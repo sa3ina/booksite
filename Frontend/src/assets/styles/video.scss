@@ -60,6 +60,11 @@
         background-color: #543e75;
         rotate: 6deg;
       }
+      @media only screen and (max-width: 560px) {
+        .designers {
+          top: 15%;
+        }
+      }
       .researchers {
         background-color: #487369;
         rotate: -3deg;
@@ -72,16 +77,31 @@
         bottom: 5%;
         left: 10%;
       }
+      @media only screen and (max-width: 368px) {
+        .teachers {
+          bottom: 8.5%;
+        }
+      }
       .parents {
         background-color: #e9827f;
         rotate: -3deg;
         bottom: 5%;
+      }
+      @media only screen and (max-width: 560px) {
+        .parents {
+          bottom: 15%;
+        }
       }
       .managers {
         background-color: #82a199;
         rotate: -4deg;
         right: 6%;
         bottom: 5%;
+      }
+      @media only screen and (max-width: 368px) {
+        .managers {
+          bottom: 2%;
+        }
       }
       .beigepartcont {
         padding: 40px;
@@ -114,18 +134,18 @@
       }
       .beigepart {
         padding-bottom: 0;
-        height: 40vh;
+        height: 50vh;
         margin-bottom: 1%;
       }
     }
     @media only screen and (max-width: 768px) {
       .beigepart {
-        height: 50vh;
+        height: 65vh;
       }
     }
     @media only screen and (max-width: 425px) {
       .beigepart {
-        height: 70vh;
+        height: 85vh;
       }
     }
   }
