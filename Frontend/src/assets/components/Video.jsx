@@ -11,6 +11,24 @@ const Video = () => {
           ></iframe>
         </div>
         <div className="beigepart">
+          <div className="ceos sticker">
+            <p>CEOs</p>
+          </div>
+          <div className="designers sticker">
+            <p>Designers</p>
+          </div>
+          <div className="researchers sticker">
+            <p>UX Researchers</p>
+          </div>
+          <div className="teachers sticker">
+            <p>Teachers</p>
+          </div>
+          <div className="parents sticker">
+            <p>Parents</p>
+          </div>
+          <div className="managers sticker">
+            <p>Product Managers</p>
+          </div>
           <div className="beigepartcont">
             <p className="who">Who is this book for?</p>
             <p className="this">

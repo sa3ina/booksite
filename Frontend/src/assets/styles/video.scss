@@ -37,7 +37,52 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      position: relative;
+      .sticker {
+        position: absolute;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Dela Gothic One", sans-serif;
+        color: RGB(250, 245, 240);
+        color: #faf5f0;
+        border-radius: 30px;
+        border: 3px solid white;
+        padding: 4px 13px;
+      }
+      .ceos {
+        top: 5%;
+        left: 16%;
+        background-color: #e9827f;
+        rotate: -10deg;
+      }
+      .designers {
+        top: 5%;
+        background-color: #543e75;
+        rotate: 6deg;
+      }
+      .researchers {
+        background-color: #487369;
+        rotate: -3deg;
+        top: 5%;
+        right: 5%;
+      }
+      .teachers {
+        background-color: #74678b;
+        rotate: 5deg;
+        bottom: 5%;
+        left: 10%;
+      }
+      .parents {
+        background-color: #e9827f;
+        rotate: -3deg;
+        bottom: 5%;
+      }
+      .managers {
+        background-color: #82a199;
+        rotate: -4deg;
+        right: 6%;
+        bottom: 5%;
+      }
       .beigepartcont {
         padding: 40px;
         text-align: left;
