@@ -77,77 +77,79 @@
   margin-bottom: 10px;
 }
 //Swiper style
-.swiper {
-  width: 50vw;
-  height: 50vh;
-  padding: 10px 0;
-}
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  border-radius: 20px;
-  text-align: left;
-}
-
-.mySwiper .swiper-pagination {
-  border-radius: 20px;
-  width: 100%;
-  margin-bottom: 5px;
-}
-.mySwiper .swiper-pagination-bullet {
-  background-color: #a39f9f;
-  opacity: 0.5;
-}
-
-.mySwiper .swiper-pagination-bullet-active {
-  background-color: #534e4e;
-  opacity: 1;
-}
-
-@media only screen and (max-width: 768px) {
+.journal-container {
   .swiper {
-    width: 60vw;
+    width: 50vw;
+    height: 50vh;
+    padding: 10px 0;
   }
-}
-@media only screen and (max-width: 500px) {
-  .swiper {
-    width: 70vw;
-    height: 60vh;
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
   }
-}
-@media only screen and (max-width: 400px) {
-  .swiper {
-    width: 88vw;
-    height: 69vh;
+
+  .mySwiper .swiper-pagination {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 5px;
   }
-}
-@media only screen and (max-width: 999px) {
-  .mySwiper {
-    display: block;
+  .mySwiper .swiper-pagination-bullet {
+    background-color: #a39f9f;
+    opacity: 0.5;
   }
-  .chswiper {
-    display: block;
+
+  .mySwiper .swiper-pagination-bullet-active {
+    background-color: #534e4e;
+    opacity: 1;
   }
-  .button-row {
-    display: none;
+
+  @media only screen and (max-width: 768px) {
+    .swiper {
+      width: 60vw;
+    }
   }
-  .papers-wrapper {
-    display: none;
+  @media only screen and (max-width: 500px) {
+    .swiper {
+      width: 70vw;
+      height: 60vh;
+    }
   }
-  .btn {
-    display: none;
+  @media only screen and (max-width: 400px) {
+    .swiper {
+      width: 88vw;
+      height: 69vh;
+    }
   }
-}
-@media only screen and (min-width: 1000px) {
-  .mySwiper {
-    display: none;
+  @media only screen and (max-width: 999px) {
+    .mySwiper {
+      display: block;
+    }
+    .chswiper {
+      display: block;
+    }
+    .button-row {
+      display: none;
+    }
+    .papers-wrapper {
+      display: none;
+    }
+    .btn {
+      display: none;
+    }
   }
-  .chswiper {
-    display: none;
+  @media only screen and (min-width: 1000px) {
+    .mySwiper {
+      display: none;
+    }
+    .chswiper {
+      display: none;
+    }
   }
 }
 //Button's content changing
