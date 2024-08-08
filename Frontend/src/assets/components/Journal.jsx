@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles/journal.scss";
-
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 const Journal = () => {
   const [activePaper, setActivePaper] = useState(0);
 
   const contents = [
     {
-      button: <p className="ch1 btn">Chapter 1</p>,
+      buttonClass: "ch1 btn",
       buttonStyle: {
         backgroundColor: "#E9827F",
         left: "10%",
@@ -15,6 +18,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 1</p>
           <p className="title">Find the Right Motivation</p>
           <p className="text">
             Why designing digital products for kids? There are several
@@ -25,7 +29,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch2 btn">Chapter 2</p>,
+      buttonClass: "ch2 btn",
       buttonStyle: {
         backgroundColor: "#553F76",
         left: "7%",
@@ -34,6 +38,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 2</p>
           <p className="title">Before You Start, Know the Industry</p>
           <p className="text">
             Knowing the market, the opportunities and how to exploit them and
@@ -46,7 +51,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch3 btn">Chapter 3</p>,
+      buttonClass: "ch3 btn",
       buttonStyle: {
         backgroundColor: "#497369",
         left: "11%",
@@ -55,6 +60,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 3</p>
           <p className="title">Know Your Target Audience</p>
           <p className="text">
             The main peculiarity of digital products for kids is their target.
@@ -67,7 +73,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch4 btn">Chapter 4</p>,
+      buttonClass: "ch4 btn",
       buttonStyle: {
         backgroundColor: "#292727",
         left: "8%",
@@ -76,6 +82,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 4</p>
           <p className="title">Concept</p>
           <p className="text">
             Establishing a solid foundation for your product is of uttermost
@@ -88,7 +95,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch5 btn">Chapter 5</p>,
+      buttonClass: "ch5 btn",
       buttonStyle: {
         backgroundColor: "#E9827F",
         left: "11%",
@@ -97,6 +104,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 5</p>
           <p className="title">Gamification</p>
           <p className="text">
             Gamification is not just a layer you place on top of the experience
@@ -110,7 +118,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch6 btn">Chapter 6</p>,
+      buttonClass: "ch6 btn",
       buttonStyle: {
         backgroundColor: "#76698D",
         left: "10%",
@@ -119,6 +127,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 6</p>
           <p className="title">Safety Measures</p>
           <p className="text">
             In children's products, safety must be a priority. There are legal
@@ -131,7 +140,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch7 btn">Chapter 7</p>,
+      buttonClass: "ch7 btn",
       buttonStyle: {
         backgroundColor: "#487369",
         right: "11%",
@@ -140,6 +149,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 7</p>
           <p className="title"> Interaction Design</p>
           <p className="text">
             This is one of the core (and chunkier) chapters of this book. We
@@ -153,7 +163,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch8 btn">Chapter 8</p>,
+      buttonClass: "ch8 btn",
       buttonStyle: {
         backgroundColor: "#eb8280",
         right: "9%",
@@ -162,6 +172,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 8</p>
           <p className="title"> UI Design</p>
           <p className="text">
             This is another thick portion of the book. UI is a big part of the
@@ -176,7 +187,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch9 btn">Chapter 9</p>,
+      buttonClass: "ch9 btn",
       buttonStyle: {
         backgroundColor: "#292727",
         right: "12%",
@@ -185,6 +196,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 9</p>
           <p className="title">User Testing with Kids</p>
           <p className="text">
             User testing with children is not the same as with adults. There are
@@ -198,7 +210,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch10 btn">Chapter 10</p>,
+      buttonClass: "ch10 btn",
       buttonStyle: {
         backgroundColor: "#74668B",
         right: "8%",
@@ -207,6 +219,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 10</p>
           <p className="title">Market Your Product</p>
           <p className="text">
             Unless it's a nonprofit project, a product is also supposed to make
@@ -220,7 +233,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch11 btn">Chapter 11</p>,
+      buttonClass: "ch11 btn",
       buttonStyle: {
         backgroundColor: "#563F77",
         right: "11%",
@@ -229,6 +242,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 11</p>
           <p className="title">Beyond the Screen</p>
           <p className="text">
             Beyond the Screen As new technologies arise, we’ll see more
@@ -241,7 +255,7 @@ const Journal = () => {
       ),
     },
     {
-      button: <p className="ch12 btn">Chapter 12</p>,
+      buttonClass: "ch12 btn",
       buttonStyle: {
         backgroundColor: "#EA817F",
         right: "9%",
@@ -250,6 +264,7 @@ const Journal = () => {
       },
       paper: (
         <div className="papercont">
+          <p className="chswiper">Chapter 12</p>
           <p className="title">Conclusion</p>
           <p className="text">
             Wrap-up of the journey into digital product design for children with
@@ -271,10 +286,10 @@ const Journal = () => {
           <button
             key={index}
             onClick={() => handleButtonClick(index)}
-            className="btn"
             style={content.buttonStyle}
+            className={content.buttonClass}
           >
-            {content.button}
+            <p>{content.buttonText}</p>
           </button>
         ))}
       </div>
@@ -300,6 +315,15 @@ const Journal = () => {
           ))}
         </div>
       </div>
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        {contents.map((content, index) => (
+          <SwiperSlide>
+            <div key={index} className="paper">
+              {content.paper}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

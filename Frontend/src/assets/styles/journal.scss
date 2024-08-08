@@ -70,3 +70,214 @@
     color: #563e79;
   }
 }
+.chswiper {
+  color: #76678e;
+  font-size: 16px;
+  font-family: "Dela Gothic One", sans-serif;
+  margin-bottom: 10px;
+}
+//Swiper style
+.swiper {
+  width: 50vw;
+  height: 50vh;
+  padding: 10px 0;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.mySwiper .swiper-pagination {
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.mySwiper .swiper-pagination-bullet {
+  background-color: #a39f9f;
+  opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #534e4e;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .swiper {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .swiper {
+    width: 88vw;
+    height: 69vh;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .mySwiper {
+    display: block;
+  }
+  .chswiper {
+    display: block;
+  }
+  .button-row {
+    display: none;
+  }
+  .papers-wrapper {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mySwiper {
+    display: none;
+  }
+  .chswiper {
+    display: none;
+  }
+}
+//Button's content changing
+.ch1.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch2.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch3.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch4.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch5.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch6.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch7.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch8.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch9.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch10.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch11.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch12.btn p {
+  display: inline-block;
+  position: relative;
+}
+.ch1.btn p::before {
+  content: "Chapter 1";
+}
+.ch2.btn p::before {
+  content: "Chapter 2";
+}
+.ch3.btn p::before {
+  content: "Chapter 3";
+}
+.ch4.btn p::before {
+  content: "Chapter 4";
+}
+.ch5.btn p::before {
+  content: "Chapter 5";
+}
+.ch6.btn p::before {
+  content: "Chapter 6";
+}
+.ch7.btn p::before {
+  content: "Chapter 7";
+}
+.ch8.btn p::before {
+  content: "Chapter 8";
+}
+.ch9.btn p::before {
+  content: "Chapter 9";
+}
+.ch10.btn p::before {
+  content: "Chapter 10";
+}
+.ch11.btn p::before {
+  content: "Chapter 11";
+}
+.ch12.btn p::before {
+  content: "Chapter 12";
+}
+@media screen and (max-width: 1200px) {
+  .ch1.btn p::before {
+    content: "1";
+  }
+  .ch2.btn p::before {
+    content: "2";
+  }
+  .ch3.btn p::before {
+    content: "3";
+  }
+  .ch4.btn p::before {
+    content: "4";
+  }
+  .ch5.btn p::before {
+    content: "5";
+  }
+  .ch6.btn p::before {
+    content: "6";
+  }
+  .ch7.btn p::before {
+    content: "7";
+  }
+  .ch8.btn p::before {
+    content: "8";
+  }
+  .ch9.btn p::before {
+    content: "9";
+  }
+  .ch10.btn p::before {
+    content: "10";
+  }
+  .ch11.btn p::before {
+    content: "11";
+  }
+  .ch12.btn p::before {
+    content: "12";
+  }
+  .journal-container {
+    .button-row {
+      button {
+        border-radius: 50%;
+        padding: 10px;
+      }
+    }
+  }
+}
