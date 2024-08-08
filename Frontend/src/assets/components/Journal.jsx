@@ -7,7 +7,12 @@ const Journal = () => {
   const contents = [
     {
       button: <p className="ch1 btn">Chapter 1</p>,
-      buttonStyle: { backgroundColor: "#E9827F", left: "10%", top: "6%" },
+      buttonStyle: {
+        backgroundColor: "#E9827F",
+        left: "10%",
+        top: "6%",
+        rotate: "-4deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Find the Right Motivation</p>
@@ -21,7 +26,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch2 btn">Chapter 2</p>,
-      buttonStyle: { backgroundColor: "#553F76", left: "10%", top: "20%" },
+      buttonStyle: {
+        backgroundColor: "#553F76",
+        left: "7%",
+        top: "20%",
+        rotate: "-1deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Before You Start, Know the Industry</p>
@@ -37,7 +47,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch3 btn">Chapter 3</p>,
-      buttonStyle: { backgroundColor: "#497369", left: "10%", top: "33%" },
+      buttonStyle: {
+        backgroundColor: "#497369",
+        left: "11%",
+        top: "33%",
+        rotate: "8deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Know Your Target Audience</p>
@@ -53,7 +68,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch4 btn">Chapter 4</p>,
-      buttonStyle: { backgroundColor: "#292727", left: "10%", top: "45%" },
+      buttonStyle: {
+        backgroundColor: "#292727",
+        left: "8%",
+        top: "48%",
+        rotate: "2deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Concept</p>
@@ -71,7 +91,7 @@ const Journal = () => {
       button: <p className="ch5 btn">Chapter 5</p>,
       buttonStyle: {
         backgroundColor: "#E9827F",
-        left: "10%",
+        left: "11%",
         bottom: "25%",
         rotate: "-5deg",
       },
@@ -94,7 +114,7 @@ const Journal = () => {
       buttonStyle: {
         backgroundColor: "#76698D",
         left: "10%",
-        bottom: "10%",
+        bottom: "9%",
         rotate: "2deg",
       },
       paper: (
@@ -112,6 +132,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch7 btn">Chapter 7</p>,
+      buttonStyle: {
+        backgroundColor: "#487369",
+        right: "11%",
+        top: "6%",
+        rotate: "3deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title"> Interaction Design</p>
@@ -128,6 +154,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch8 btn">Chapter 8</p>,
+      buttonStyle: {
+        backgroundColor: "#eb8280",
+        right: "9%",
+        top: "20%",
+        rotate: "-3deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title"> UI Design</p>
@@ -145,6 +177,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch9 btn">Chapter 9</p>,
+      buttonStyle: {
+        backgroundColor: "#292727",
+        right: "12%",
+        top: "34%",
+        rotate: "8deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">User Testing with Kids</p>
@@ -161,6 +199,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch10 btn">Chapter 10</p>,
+      buttonStyle: {
+        backgroundColor: "#74668B",
+        right: "8%",
+        top: "48%",
+        rotate: "2deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Market Your Product</p>
@@ -177,6 +221,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch11 btn">Chapter 11</p>,
+      buttonStyle: {
+        backgroundColor: "#563F77",
+        right: "11%",
+        bottom: "27%",
+        rotate: "-5deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Beyond the Screen</p>
@@ -192,6 +242,12 @@ const Journal = () => {
     },
     {
       button: <p className="ch12 btn">Chapter 12</p>,
+      buttonStyle: {
+        backgroundColor: "#EA817F",
+        right: "9%",
+        bottom: "9%",
+        rotate: "2deg",
+      },
       paper: (
         <div className="papercont">
           <p className="title">Conclusion</p>

@@ -29,7 +29,7 @@
 
   .papers-wrapper {
     overflow: hidden;
-    width: 460px;
+    width: 600px;
     height: 470px;
     position: relative;
 
@@ -42,7 +42,7 @@
 
     .paper {
       width: 100%;
-      height: 400px;
+      height: 405px;
       padding: 100px;
       background-color: white;
       border: 1px solid #ddd;
@@ -54,5 +54,19 @@
       position: relative;
       transition: transform 0.5s ease, opacity 0.5s ease;
     }
+  }
+}
+.papercont {
+  .title {
+    font-size: 18px;
+    font-family: "Dela Gothic One", sans-serif;
+    color: #563e79;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    color: #563e79;
   }
 }
