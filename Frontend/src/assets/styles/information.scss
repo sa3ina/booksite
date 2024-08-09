@@ -9,12 +9,14 @@
     background-color: #563e79ed;
     box-shadow: 0 2px #4b3271;
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .purplesidecont {
       padding: 64px 64px 64px 60px;
       display: flex;
       flex-direction: column;
       gap: 30px;
-
       .texts {
         color: #faf5f0;
         display: flex;

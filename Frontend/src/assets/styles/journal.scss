@@ -112,18 +112,19 @@
   @media only screen and (max-width: 768px) {
     .swiper {
       width: 60vw;
+      height: 60vh;
     }
   }
   @media only screen and (max-width: 500px) {
     .swiper {
-      width: 70vw;
+      width: 80vw;
       height: 60vh;
     }
   }
   @media only screen and (max-width: 400px) {
     .swiper {
-      width: 88vw;
-      height: 69vh;
+      width: 90vw;
+      height: 70vh;
     }
   }
   @media only screen and (max-width: 999px) {
@@ -147,6 +148,8 @@
     .mySwiper {
       display: none;
     }
+  }
+  @media only screen and (min-width: 1200px) {
     .chswiper {
       display: none;
     }
