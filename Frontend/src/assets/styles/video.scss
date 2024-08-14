@@ -1,12 +1,10 @@
 .videosection {
   margin-bottom: 2%;
   width: 95.5%;
-
   .videosectcont {
     display: flex;
     width: 100%;
     gap: 1%;
-
     .video {
       width: 53%;
       position: relative;
@@ -159,5 +157,10 @@
         height: 75vh;
       }
     }
+  }
+}
+@media only screen and (min-width: 1910px) {
+  .videosection {
+    max-width: 70%;
   }
 }

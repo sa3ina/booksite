@@ -52,6 +52,12 @@
   height: 55vh;
   border-radius: 30px;
 }
+@media only screen and (min-width: 1910px) {
+  .swiper {
+    max-height: 40vh;
+    max-width: 36vw;
+  }
+}
 .swiper:hover {
   cursor: grab;
 }
@@ -75,4 +81,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media only screen and (min-width: 1910px) {
+  .info {
+    max-width: 70%;
+  }
 }

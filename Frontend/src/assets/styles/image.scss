@@ -11,4 +11,14 @@
     background-position: center;
     border-radius: 40px;
   }
+  @media only screen and (min-width: 1910px) {
+    .background-image {
+      max-height: 40vh;
+    }
+  }
+}
+@media only screen and (min-width: 1910px) {
+  .background {
+    max-width: 70%;
+  }
 }

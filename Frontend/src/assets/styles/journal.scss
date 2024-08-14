@@ -55,6 +55,11 @@
       transition: transform 0.5s ease, opacity 0.5s ease;
     }
   }
+  @media only screen and (min-width: 1910px) {
+    .papers-wrapper {
+      height: 35vh;
+    }
+  }
 }
 .papercont {
   .title {
@@ -284,5 +289,11 @@
         padding: 10px;
       }
     }
+  }
+}
+@media only screen and (min-width: 1910px) {
+  .journal-container {
+    max-width: 70%;
+    height: 40vh;
   }
 }
